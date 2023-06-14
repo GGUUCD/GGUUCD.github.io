@@ -13,18 +13,18 @@
 
   <title>关于 | 林若</title>
 
-  <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/gguucd.github.io/favicon.ico">
+  <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/GGUUCD.github.io/favicon.ico">
   <link rel="stylesheet" href="https://at.alicdn.com/t/font_1911880_c1nvbyezg17.css">
   <link href="https://unpkg.com/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
-  <link href="/gguucd.github.io/js/swiper/swiper@5.4.1.min.css" rel="stylesheet">
+  <link href="/GGUUCD.github.io/js/swiper/swiper@5.4.1.min.css" rel="stylesheet">
   
   
   
   
-<link rel="stylesheet" href="/gguucd.github.io/css/animate.min.css">
+<link rel="stylesheet" href="/GGUUCD.github.io/css/animate.min.css">
 
   
-<link rel="stylesheet" href="/gguucd.github.io/css/style.css">
+<link rel="stylesheet" href="/GGUUCD.github.io/css/style.css">
 
   
   
@@ -32,7 +32,7 @@
   
   
     
-<link rel="stylesheet" href="/gguucd.github.io/js/shareJs/share.min.css">
+<link rel="stylesheet" href="/GGUUCD.github.io/js/shareJs/share.min.css">
 
   
   <style>
@@ -156,20 +156,20 @@
 </script> 
 
 <!-- 轮播图所需要的js -->
-<script src="/gguucd.github.io/js/swiper/swiper.min.js"></script>
-<script src="/gguucd.github.io/js/swiper/vue-awesome-swiper.js"></script>
-<script src="/gguucd.github.io/js/swiper/swiper.animate1.0.3.min.js"></script>
+<script src="/GGUUCD.github.io/js/swiper/swiper.min.js"></script>
+<script src="/GGUUCD.github.io/js/swiper/vue-awesome-swiper.js"></script>
+<script src="/GGUUCD.github.io/js/swiper/swiper.animate1.0.3.min.js"></script>
 
 <script type="text/javascript">
   Vue.use(window.VueAwesomeSwiper)
 </script>
 
 
-  <script src="/gguucd.github.io/js/vue-typed-js/index.js"></script>
+  <script src="/GGUUCD.github.io/js/vue-typed-js/index.js"></script>
 
 
 <!-- 首页的公告滚动插件的js需要重新加载 -->
-<script src="/gguucd.github.io/js/vue-seamless-scroll/index.js"></script>
+<script src="/GGUUCD.github.io/js/vue-seamless-scroll/index.js"></script>
 
 <!-- 打字机效果js -->
 <script src="https://unpkg.com/typed.js@2.0.11"></script>
@@ -197,13 +197,121 @@
   </transition>
   <div class="drawer-box" :class="{'active': visible}">
     <div class="drawer-box-head bg-color">
-      <img class="drawer-box-head_logo lazyload placeholder" src="/gguucd.github.io/medias/logo.png" class="lazyload placeholder" data-srcset="/gguucd.github.io/medias/logo.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="logo">
+      <img class="drawer-box-head_logo lazyload placeholder" src="/GGUUCD.github.io/medias/logo.png" class="lazyload placeholder" data-srcset="/GGUUCD.github.io/medias/logo.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="logo">
       <h3 class="drawer-box-head_title">林若</h3>
       <h5 class="drawer-box-head_desc">天生我才必有用，千金散尽还复来</h5>
     </div>
     
     <div class="drawer-box-content">
       <ul class="drawer-box-content_menu">
+        
+          
+            <li class="drawer-box-content_item" style="position: relative;">
+              
+                <a href="/GGUUCD.github.io/" class="drawer-menu-item-link">
+                  
+                    <i class="fas fa-home" aria-hidden="true"></i>
+                  
+                  <span class="name">首页</span>
+                </a>
+              
+            </li>
+          
+            <li class="drawer-box-content_item" style="position: relative;">
+              
+                <a href="/GGUUCD.github.io/archives" class="drawer-menu-item-link">
+                  
+                    <i class="fas fa-archive" aria-hidden="true"></i>
+                  
+                  <span class="name">归档</span>
+                </a>
+              
+            </li>
+          
+            <li class="drawer-box-content_item" style="position: relative;">
+              
+                <a href="/GGUUCD.github.io/tags" class="drawer-menu-item-link">
+                  
+                    <i class="fas fa-tags" aria-hidden="true"></i>
+                  
+                  <span class="name">标签</span>
+                </a>
+              
+            </li>
+          
+            <li class="drawer-box-content_item" style="position: relative;">
+              
+                <a href="/GGUUCD.github.io/categories" class="drawer-menu-item-link">
+                  
+                    <i class="fas fa-bookmark" aria-hidden="true"></i>
+                  
+                  <span class="name">分类</span>
+                </a>
+              
+            </li>
+          
+            <li class="drawer-box-content_item" style="position: relative;">
+              
+                <a href="/GGUUCD.github.io/friends" class="drawer-menu-item-link">
+                  
+                  <span class="name">友情链接</span>
+                </a>
+              
+            </li>
+          
+            <li class="drawer-box-content_item" style="position: relative;">
+              
+                <a href="javascript:;" class="drawer-menu-item-link has-children" @click="openOrCloseMenu(5)">
+                  <span>
+                    
+                      <i class="fas fa-link"></i>
+                    
+                    <span class="name">更多</span>
+                  </span>
+                  <i class="fas fa-chevron-left arrow " :class="{'icon-rotate': isOpen(5)}" aria-hidden="true"></i>
+                </a>
+                <ul class="drawer-sub-menu" v-if="isOpen(5)">
+                  
+                  <li>
+                    <a href="/GGUUCD.github.io/gallery">
+                      
+                      <i class="fas fa-music" style="margin-top: -20px;"></i>
+                      
+                      <span>图库</span>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="/GGUUCD.github.io/huoban">
+                      
+                      <i class="fas fa-film" style="margin-top: -20px;"></i>
+                      
+                      <span>友情连接</span>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="/GGUUCD.github.io/about/">
+                      
+                      <i class="fas fa-film" style="margin-top: -20px;"></i>
+                      
+                      <span>关于我</span>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a target="_blank" rel="noopener" href="http://baidu.com">
+                      
+                      <i class="fas fa-film" style="margin-top: -20px;"></i>
+                      
+                      <span>百度</span>
+                    </a>
+                  </li>
+                  
+                </ul>
+              
+            </li>
+          
         
         
           <li class="drawer-box-content_item">
@@ -267,13 +375,119 @@
     <div class="blog-title" id="author-avatar">
       
         <div class="avatar">
-          <img src="/gguucd.github.io/medias/logo.png" class="lazyload placeholder" data-srcset="/gguucd.github.io/medias/logo.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="logo">
+          <img src="/GGUUCD.github.io/medias/logo.png" class="lazyload placeholder" data-srcset="/GGUUCD.github.io/medias/logo.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="logo">
         </div>
       
-      <a href="/gguucd.github.io/" class="logo">林若</a>
+      <a href="/GGUUCD.github.io/" class="logo">林若</a>
     </div>
     <nav class="navbar">
       <ul class="menu">
+        
+          
+            <li class="menu-item" style="position: relative;">
+              
+                <a href="/GGUUCD.github.io/" class="menu-item-link" title="首页">
+                  
+                    <i class="fas fa-home" aria-hidden="true"></i>
+                  
+                  <span class="name">首页</span>
+                </a>
+              
+            </li>
+          
+            <li class="menu-item" style="position: relative;">
+              
+                <a href="/GGUUCD.github.io/archives" class="menu-item-link" title="归档">
+                  
+                    <i class="fas fa-archive" aria-hidden="true"></i>
+                  
+                  <span class="name">归档</span>
+                </a>
+              
+            </li>
+          
+            <li class="menu-item" style="position: relative;">
+              
+                <a href="/GGUUCD.github.io/tags" class="menu-item-link" title="标签">
+                  
+                    <i class="fas fa-tags" aria-hidden="true"></i>
+                  
+                  <span class="name">标签</span>
+                </a>
+              
+            </li>
+          
+            <li class="menu-item" style="position: relative;">
+              
+                <a href="/GGUUCD.github.io/categories" class="menu-item-link" title="分类">
+                  
+                    <i class="fas fa-bookmark" aria-hidden="true"></i>
+                  
+                  <span class="name">分类</span>
+                </a>
+              
+            </li>
+          
+            <li class="menu-item" style="position: relative;">
+              
+                <a href="/GGUUCD.github.io/friends" class="menu-item-link" title="友情链接">
+                  
+                  <span class="name">友情链接</span>
+                </a>
+              
+            </li>
+          
+            <li class="menu-item" style="position: relative;">
+              
+                <a href="javascript:;" class="menu-item-link" title="更多">
+                  
+                    <i class="fas fa-link"></i>
+                  
+                  <span class="name">更多</span>
+                  <i class="fas fa-chevron-down arrow" aria-hidden="true"></i>
+                </a>
+                <ul class="sub-menu">
+                  
+                  <li>
+                    <a href="/GGUUCD.github.io/gallery">
+                      
+                      <i class="fas fa-music" style="margin-top: -20px;"></i>
+                      
+                      <span>图库</span>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="/GGUUCD.github.io/huoban">
+                      
+                      <i class="fas fa-film" style="margin-top: -20px;"></i>
+                      
+                      <span>友情连接</span>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="/GGUUCD.github.io/about/">
+                      
+                      <i class="fas fa-film" style="margin-top: -20px;"></i>
+                      
+                      <span>关于我</span>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a target="_blank" rel="noopener" href="http://baidu.com">
+                      
+                      <i class="fas fa-film" style="margin-top: -20px;"></i>
+                      
+                      <span>百度</span>
+                    </a>
+                  </li>
+                  
+                </ul>
+              
+            </li>
+          
         
       </ul>
       
@@ -306,7 +520,7 @@
     </div>
   </transition>
 </div>
-<script src="/gguucd.github.io/js/local_search.js"></script>
+<script src="/GGUUCD.github.io/js/local_search.js"></script>
 <script>
   var body = document.body || document.documentElement || window;
   var vm = new Vue({
@@ -332,7 +546,7 @@
       },
       getSearchFile() {
         if (!this.searchInput) {
-          getSearchFile("/gguucd.github.io/search.xml");
+          getSearchFile("/GGUUCD.github.io/search.xml");
         }
       },
       cancelDialogVisible() {
@@ -417,7 +631,7 @@
   </div>
   
   
-    <script src="/gguucd.github.io/js/bubble/bubble.js"></script>
+    <script src="/GGUUCD.github.io/js/bubble/bubble.js"></script>
   
 </div>
 
@@ -443,7 +657,7 @@
     </li>
     <li class="post-copyright-link">
     <strong>文章链接:  </strong>
-    <a href="/gguucd.github.io/about/index.html" target="_blank" title="about">https://gguucd.github.io/about/index.html</a>
+    <a href="/GGUUCD.github.io/about/index.html" target="_blank" title="about">https://GGUUCD.github.io/about/index.html</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明:   </strong>
@@ -560,7 +774,7 @@
 <!-- 文章详情页的分享 -->
 <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
 
-<script src="/gguucd.github.io/js/shareJs/social-share.min.js"></script>
+<script src="/GGUUCD.github.io/js/shareJs/social-share.min.js"></script>
 </script>
 
 <style>
@@ -595,7 +809,7 @@
   <div class='content'>
     
       
-        <a class='avatar flat-box rectangle' href='/gguucd.github.io/about/'>
+        <a class='avatar flat-box rectangle' href='/GGUUCD.github.io/about/'>
           <img src='https://pic2.zhimg.com/80/v2-42b72d5ebee4b8d8aa70d9687effe87b_1440w.webp'/>
         </a>
       
@@ -619,7 +833,7 @@
       <div class="social-wrapper">
         
           
-            <a href="/gguucd.github.io/atom.xml"
+            <a href="/GGUUCD.github.io/atom.xml"
               class="social fas fa-rss flat-btn"
               target="_blank"
               rel="external nofollow noopener noreferrer">
@@ -696,7 +910,7 @@
             
 
             <div class="post-img-box">
-              <a href="/gguucd.github.io/2023/06/12/hello-world/" class="post-img " style="background-size: cover; 
+              <a href="/GGUUCD.github.io/2023/06/12/hello-world/" class="post-img " style="background-size: cover; 
                 background-position: center center;">
                 <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="https://pic3.zhimg.com/80/v2-5f7cb7e900b9dcf5354c3d4d2c5cc3c2_1440w.webp" class="lazyload placeholder" data-srcset="https://pic3.zhimg.com/80/v2-5f7cb7e900b9dcf5354c3d4d2c5cc3c2_1440w.webp" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
               </a>
@@ -707,7 +921,7 @@
                   <span class="post-date">06-12</span>
                 
               </div>
-              <a class="post-title" href="/gguucd.github.io/2023/06/12/hello-world/">Hello World</a>
+              <a class="post-title" href="/GGUUCD.github.io/2023/06/12/hello-world/">Hello World</a>
             </div>
           </div>
         
@@ -718,7 +932,7 @@
       
   <section class="widget side_archives">
     
-    <header><a style="color: red" href='/gguucd.github.io/archives/'><i class="fas fa-archive fa-fw" aria-hidden="true"></i><span class='name'>归档</span></a></header><div class="content"><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/gguucd.github.io/archives/2023/06/"><span class="card-archive-list-date">六月 2023</span><span class="card-archive-list-count">1</span></a></li></ul></div>
+    <header><a style="color: red" href='/GGUUCD.github.io/archives/'><i class="fas fa-archive fa-fw" aria-hidden="true"></i><span class='name'>归档</span></a></header><div class="content"><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/GGUUCD.github.io/archives/2023/06/"><span class="card-archive-list-date">六月 2023</span><span class="card-archive-list-count">1</span></a></li></ul></div>
   </section>
 
       <section class="widget side_webinfo">
@@ -778,7 +992,7 @@
         <div class="webinfo-item">
           <div>最后活动时间：</div>
           
-            <div id="last-update" style="display: none;">Wed Jun 14 2023 21:51:58 GMT+0800 (中国标准时间)</div>
+            <div id="last-update" style="display: none;">Wed Jun 14 2023 21:54:43 GMT+0800 (中国标准时间)</div>
             <div id="last-update-show">2023-06-14 日</div>
           
         </div>
@@ -843,7 +1057,7 @@
 </aside>
 
   <!-- 图片放大 Wrap images with fancybox support -->
-  <script src="/gguucd.github.io/js/wrapImage.js"></script>
+  <script src="/GGUUCD.github.io/js/wrapImage.js"></script>
 </div>
 
 <!-- 文章详情页背景图 -->
@@ -923,7 +1137,7 @@
 			let isImg = prop.includes('.bmp') || prop.includes('.jpg') || prop.includes('.png') || prop.includes('.tif') || prop.includes('.gif') || prop.includes('.pcx') || prop.includes('.tga') || prop.includes('.exif') || prop.includes('.fpx') || prop.includes('.psd') || prop.includes('.cdr') || prop.includes('.pcd') || prop.includes('.dxf') || prop.includes('.ufo') || prop.includes('.eps') || prop.includes('.ai') || prop.includes('.raw') || prop.includes('.WMF') || prop.includes('.webp') || prop.includes('.jpeg') || prop.includes('http://') || prop.includes('https://')
 			if (isImg) {
 				let img = prop.split(',');
-				let configRoot = '/gguucd.github.io/'
+				let configRoot = '/GGUUCD.github.io/'
 				let arrImg = [];
 				img.forEach(el => {
 					var Expression = /http(s)?:\/\/([\w-]+\.)+[\w-]+(\/[\w- .\/?%&=]*)?/;
@@ -1257,12 +1471,12 @@
       <div class="goTop top-btn-color" pointer>
   <i class="fas fa-arrow-up" aria-hidden="true"></i>
 </div>
-<script src="/gguucd.github.io/js/goTop.js"></script>
+<script src="/GGUUCD.github.io/js/goTop.js"></script>
 
     
     <!-- 渲染左下角音乐播放器 -->
     
-      <link rel="stylesheet" href="/gguucd.github.io/js/aplayer/APlayer@1.10.1.min.css">
+      <link rel="stylesheet" href="/GGUUCD.github.io/js/aplayer/APlayer@1.10.1.min.css">
 <style>
 .aplayer .aplayer-lrc p {
   
@@ -1342,15 +1556,15 @@
     
     <!-- 背景彩带 -->
     
-      <script type="text/javascript" size="100" alpha='0.4' zIndex="-1" src="/gguucd.github.io/js/ribbon.min.js"></script>
+      <script type="text/javascript" size="100" alpha='0.4' zIndex="-1" src="/GGUUCD.github.io/js/ribbon.min.js"></script>
     
 
-    <script src="/gguucd.github.io/js/utils/index.js"></script>
-    <script src="/gguucd.github.io/js/app.js"></script>
+    <script src="/GGUUCD.github.io/js/utils/index.js"></script>
+    <script src="/GGUUCD.github.io/js/app.js"></script>
     
     <!-- 文章目录所需js -->
-<!-- <link href="/gguucd.github.io/js/tocbot/tocbot.css" rel="stylesheet">
-<script src="/gguucd.github.io/js/tocbot/tocbot.min.js"></script> -->
+<!-- <link href="/GGUUCD.github.io/js/tocbot/tocbot.css" rel="stylesheet">
+<script src="/GGUUCD.github.io/js/tocbot/tocbot.min.js"></script> -->
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.18.2/tocbot.min.js"></script>
 
@@ -1544,7 +1758,7 @@
     if ($(".post-detail").find(".issues-api").length == 0) {
       return;
     } 
-    loadScript('/gguucd.github.io/js/issues/index.js');
+    loadScript('/GGUUCD.github.io/js/issues/index.js');
   };
   $(function () {
     loadIssuesJS();
@@ -1562,7 +1776,7 @@
     if ($(".post-detail").find(".getJsonPhoto-api").length == 0) {
       return;
     } 
-    loadScript('/gguucd.github.io/js/getPhotoOnline/index.js');
+    loadScript('/GGUUCD.github.io/js/getPhotoOnline/index.js');
   };
   $(function () {
     loadPhotoOnlineJS();
@@ -1581,7 +1795,7 @@
       return;
     } 
     loadScript('https://cdnjs.cloudflare.com/ajax/libs/waterfall.js/1.0.2/waterfall.min.js'); // 瀑布流插件，https://raphamorim.io/waterfall.js/
-    loadScript('/gguucd.github.io/js/getTalkOnline/index.js');
+    loadScript('/GGUUCD.github.io/js/getTalkOnline/index.js');
   };
   $(function () {
     loadTalkOnlineJS();
@@ -1599,7 +1813,7 @@
     if ($(".post-detail").find(".getJsonSite-api").length == 0) {
       return;
     } 
-    loadScript('/gguucd.github.io/js/getSiteOnline/index.js');
+    loadScript('/GGUUCD.github.io/js/getSiteOnline/index.js');
   };
   $(function () {
     loadSiteOnlineJS();
@@ -1614,7 +1828,7 @@
 <!-- 输入框打字特效 -->
 <!-- 输入框打字特效 -->
 
-  <script src="/gguucd.github.io/js/activate-power-mode.js"></script>
+  <script src="/GGUUCD.github.io/js/activate-power-mode.js"></script>
   <script>
     POWERMODE.colorful = true;  // 打开随机颜色特效
     POWERMODE.shake = false;    // 关闭输入框抖动
@@ -1626,7 +1840,7 @@
 
   <link rel="stylesheet" href="https://unpkg.com/v-plugs-ayu/lib/ayu.css">
   <script src="https://unpkg.com/v-plugs-ayu/lib/ayu.umd.min.js"></script>
-  <script src="/gguucd.github.io/js/clipboard/clipboard.min.js"></script>
+  <script src="/GGUUCD.github.io/js/clipboard/clipboard.min.js"></script>
   <div id="appCopy">
   </div>
   <script data-pjax>
@@ -1783,7 +1997,7 @@
   
     <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 999; pointer-events: none;" ></canvas>
     <script src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
-    <script src="/gguucd.github.io/js/cursor/explosion.min.js"></script>
+    <script src="/GGUUCD.github.io/js/cursor/explosion.min.js"></script>
   
 
 
@@ -1852,7 +2066,7 @@
 <!-- pjax -->
 
 
-  <script src="/gguucd.github.io/js/pjax@0.2.8/index.js"></script>
+  <script src="/GGUUCD.github.io/js/pjax@0.2.8/index.js"></script>
   
     <!-- 样式位于：source/css/_third-party/pjaxanimate.styl -->
 
